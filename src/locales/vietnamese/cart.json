@@ -1,0 +1,27 @@
+{
+	"emtyCart": {
+		"your shopping cart is emty": "Giỏ hàng của bạn còn trống",
+		"go shopping now": "mua ngay"
+	},
+	"cartTitlte": {
+		"product": "sản phẩm",
+		"product name": "tên sản phẩm",
+		"unit price": "đơn giá",
+		"quantity": "số lượng",
+		"total price": "số tiền",
+		"actions": "thao tác"
+	},
+	"cartItem": {
+		"delete": "xoá",
+		"₫25.000 off shipping on orders from ₫150.000": "Giảm ₫25.000 phí vận chuyển đơn tối thiểu ₫99.000",
+		"₫15.000 off shipping on orders from ₫50.000;": "Giảm ₫15.000 phí vận chuyển đơn tối thiểu ₫50.000;"
+	},
+	"cartFooter": {
+		"select all": "chọn tất cả",
+		"delete": "xoá",
+		"total": "Tổng thanh toán",
+		"item": "Sản phẩm",
+		"saved": "Tiết kiệm",
+		"check out": "mua hàng"
+	}
+}

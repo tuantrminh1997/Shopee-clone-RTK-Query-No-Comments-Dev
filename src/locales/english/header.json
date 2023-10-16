@@ -1,0 +1,16 @@
+{
+	"header": {
+		"login": "login",
+		"register": "register",
+		"search product name": "search product name ...",
+		"my account": "my account",
+		"my purchase": "my purchase",
+		"logout": "logout",
+		"recently added products": "recently added products",
+		"view my shopping cart": "view my shopping cart",
+		"no products yet": "no products yet"
+	},
+	"headercartLayout": {
+		"cart": "Cart"
+	}
+}

@@ -1,0 +1,1 @@
+- folder locales chứa các namespace chia thành các loại ngôn ngữ -> chia thành các pages trong dự án để handle chức năng đa ngôn ngữ.

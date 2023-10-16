@@ -1,0 +1,24 @@
+{
+	"productTitleArea": {
+		"views": "lượt xem",
+		"sold": "đã bán",
+		"ha noi": "hà nội",
+		"discount": "giảm"
+	},
+	"productInformations": {
+		"protection": "bảo hiểm",
+		"shipping": "vận chuyển",
+		"free shipping": "Miễn phí vận chuyển",
+		"quantity": "số lượng",
+		"pieces available": "sản phẩm có sẵn",
+		"add to cart": "thêm vào giỏ hàng",
+		"buy now": "mua ngay",
+		"show more": "xem thêm",
+		"collapse": "thu gọn"
+	},
+	"related informations": {
+		"product description": "mô tả sản phẩm",
+		"top picks from shop": "top sản phẩm bán chạy",
+		"you may also like": "có thể bạn cũng thích"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"productTitleArea": {
+		"views": "views",
+		"sold": "sold",
+		"ha noi": "ha noi",
+		"discount": "discount"
+	},
+	"productInformations": {
+		"protection": "protection",
+		"shipping": "shipping",
+		"free shipping": "free shipping",
+		"quantity": "quantity",
+		"pieces available": "pieces available",
+		"add to cart": "add to cart",
+		"buy now": "buy now",
+		"show more": "show more",
+		"collapse": "collapse"
+	},
+	"related informations": {
+		"product description": "product description",
+		"top picks from shop": "top picks from shop",
+		"you may also like": "you may also like"
+	}
+}

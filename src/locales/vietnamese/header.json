@@ -1,0 +1,16 @@
+{
+	"header": {
+		"login": "đăng nhập",
+		"register": "đăng ký",
+		"search product name": "tìm kiếm tên sản phẩm ...",
+		"my account": "tài khoản của tôi",
+		"my purchase": "đơn mua",
+		"logout": "đăng xuất",
+		"recently added products": "sản phẩm mới thêm",
+		"view my shopping cart": "xem giỏ hàng",
+		"no products yet": "chưa có sản phẩm"
+	},
+	"headercartLayout": {
+		"cart": "Giỏ hàng"
+	}
+}

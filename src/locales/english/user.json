@@ -1,0 +1,44 @@
+{
+	"purchaseTopTitle": {
+		"all": "all",
+		"to pay": "to pay",
+		"to ship": "to ship",
+		"to receive": "to receive",
+		"completed": "completed",
+		"cancelled": "cancelled"
+	},
+	"asideNavbar": {
+		"my account": "my account",
+		"profile": "profile",
+		"change password": "change password",
+		"my purchase": "my purchase",
+		"edit profile": "edit profile"
+	},
+	"topTitle": {
+		"my profile": "my profile",
+		"manage and protect your account": "Manage and protect your account"
+	},
+	"content": {
+		"username": "username",
+		"email": "email",
+		"phone number": "phone number",
+		"address": "address",
+		"date of birth": "Date of birth",
+		"save": "save",
+		"no orders yet": "No orders yet"
+	},
+	"changePasswordContent": {
+		"current password": "current password",
+		"enter your current password": "enter your current password...",
+		"new password": "new password",
+		"enter your new password": "enter your new password...",
+		"confirm new password": "confirm new password",
+		"confirm your new password": "confirm your new password..."
+	},
+	"userAvatar": {
+		"select image": "select image",
+		"file size": "File size",
+		"maximum": "maximum",
+		"file extension": "File extension"
+	}
+}

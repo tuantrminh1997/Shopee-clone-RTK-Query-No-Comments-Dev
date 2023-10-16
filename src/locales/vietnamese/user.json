@@ -1,0 +1,44 @@
+{
+	"purchaseTopTitle": {
+		"all": "tất cả",
+		"to pay": "chờ thanh toán",
+		"to ship": "vận chuyển",
+		"to receive": "đang giao",
+		"completed": "hoàn thành",
+		"cancelled": "đã hủy"
+	},
+	"asideNavbar": {
+		"my account": "tài khoản của tôi",
+		"profile": "hồ sơ",
+		"change password": "đổi mật khẩu",
+		"my purchase": "đơn mua",
+		"edit profile": "sửa hồ sơ"
+	},
+	"topTitle": {
+		"my profile": "hồ sơ của tôi",
+		"manage and protect your account": "Quản lý thông tin hồ sơ để bảo mật tài khoản"
+	},
+	"content": {
+		"username": "tên",
+		"email": "email",
+		"phone number": "số điện thoại",
+		"address": "địa chỉ",
+		"date of birth": "Ngày/tháng/năm sinh",
+		"save": "lưu",
+		"no orders yet": "Chưa có đơn hàng"
+	},
+	"changePasswordContent": {
+		"current password": "mật khẩu hiện tại",
+		"enter your current password": "nhập mật khẩu hiện tại...",
+		"new password": "mật khẩu mới",
+		"enter your new password": "nhập mật khẩu mới...",
+		"confirm new password": "xác nhận mật khẩu mới",
+		"confirm your new password": "xác nhận mật khẩu mới..."
+	},
+	"userAvatar": {
+		"select image": "chọn ảnh",
+		"file size": "Dung lượng file",
+		"maximum": "tối đa",
+		"file extension": "Định dạng"
+	}
+}

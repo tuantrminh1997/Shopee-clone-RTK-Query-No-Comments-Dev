@@ -1,0 +1,18 @@
+{
+	"login": {
+		"login": "login",
+		"email": "Email",
+		"password": "Password",
+		"do not have an account ?": "do not have an account ?",
+		"register": "register"
+	},
+	"register": {
+		"email": "Email",
+		"password": "Password",
+		"confirm password": "Confirm password",
+		"register": "register",
+		"submit": "submit",
+		"do you already have an account ?": "Do you already have an account ?",
+		"login": "login"
+	}
+}

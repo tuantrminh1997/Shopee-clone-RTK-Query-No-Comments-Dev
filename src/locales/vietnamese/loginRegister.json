@@ -1,0 +1,18 @@
+{
+	"login": {
+		"login": "đăng nhập",
+		"email": "Email",
+		"password": "Mật khẩu",
+		"do not have an account ?": "Bạn chưa có tài khoản ?",
+		"register": "Đăng ký"
+	},
+	"register": {
+		"email": "Email",
+		"password": "Mật khẩu",
+		"confirm password": "Xác nhận mật khẩu",
+		"register": "Đăng ký",
+		"submit": "Xác nhận",
+		"do you already have an account ?": "Bạn đã có tài khoản ?",
+		"login": "Đăng nhập"
+	}
+}

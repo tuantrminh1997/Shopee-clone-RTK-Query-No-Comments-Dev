@@ -1,0 +1,27 @@
+{
+	"emtyCart": {
+		"your shopping cart is emty": "Your shopping cart is emty",
+		"go shopping now": "go shopping now"
+	},
+	"cartTitlte": {
+		"product": "product",
+		"product name": "product name",
+		"unit price": "unit price",
+		"quantity": "quantity",
+		"total price": "total price",
+		"actions": "actions"
+	},
+	"cartItem": {
+		"delete": "delete",
+		"₫15.000 off shipping on orders from ₫50.000;": "₫15.000 off shipping on orders from ₫50.000;",
+		"₫25.000 off shipping on orders from ₫150.000": "₫25.000 off shipping on orders from ₫150.000"
+	},
+	"cartFooter": {
+		"select all": "select all",
+		"delete": "delete",
+		"total": "Total",
+		"item": "Item",
+		"saved": "Saved",
+		"check out": "check out"
+	}
+}
