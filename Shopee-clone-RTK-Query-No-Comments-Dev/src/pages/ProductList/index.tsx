@@ -1,9 +1,7 @@
 // Sử dụng {Helmet} từ react helmet async thay vì { Helmet } từ react-helmet -> handle vấn đề báo lỗi ở console Using UNSAFE_componentWillMount ...v...v.....
 import { Helmet } from "react-helmet-async";
-// react hooks
-import { useEffect } from "react";
 // types
-import { QueryConfigType, ProductItemSuccessResponse, Category, RootState } from "src/types";
+import { QueryConfigType, ProductItemSuccessResponse, Category } from "src/types";
 // custome hooks
 import { useQueryConfig } from "src/hooks";
 // RTK Query hooks
@@ -12,7 +10,6 @@ import { useGetCategoriesQuery, useGetProductListQuery } from "src/sliceApis/pro
 import { ProductItem } from "src/components";
 // private components:
 import { SkeletonLoadingProductItem, Pagination, Sort, AsideFilter } from "./components";
-import { useSelector } from "react-redux";
 
 export default function ProductList() {
 	const queryConfig = useQueryConfig();
@@ -22,11 +19,6 @@ export default function ProductList() {
 
 	// query quản lý chức năng get Categories:
 	const { data: categoriesQueryData } = useGetCategoriesQuery();
-
-	const userProfile = useSelector((state: RootState) => state.app.userProfile);
-	useEffect(() => {
-		console.log("userProfile from Redux: ", userProfile);
-	}, [userProfile]);
 
 	return (
 		<div className={`flex w-[1200px] ${!productListQueryData ? "min-h-1000px" : ""}`}>

@@ -69,7 +69,6 @@ export default function Header({ isHeaderForCartLayout = false }: HeaderPropsTyp
 		try {
 			const response = await logoutMutation().unwrap();
 			const logoutSuccessMessage = response.message;
-			console.log("logoutSuccessMessage: ", logoutSuccessMessage);
 			if (logoutSuccessMessage) {
 				dispatch(setIsLoggedInAction(false));
 				dispatch(setUserProfileAction(null));

@@ -53,7 +53,6 @@ class Http {
 			this.accessToken = accessToken as string;
 			return accessToken as string;
 		} catch (error) {
-			console.log("refresh_token out of date error: ", error);
 			// -> logout:
 			this.accessToken = "";
 			this.refreshToken = "";

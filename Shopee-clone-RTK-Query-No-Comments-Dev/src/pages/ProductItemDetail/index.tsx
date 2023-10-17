@@ -82,7 +82,6 @@ export default function ProductItemDetail() {
 		})
 			.unwrap()
 			.then((addToCartSuccessResponse) => {
-				console.log("addToCartSuccessResponse: ", addToCartSuccessResponse);
 				toast(addToCartSuccessResponse.message, { autoClose: 3000 });
 			})
 			.catch(() => {

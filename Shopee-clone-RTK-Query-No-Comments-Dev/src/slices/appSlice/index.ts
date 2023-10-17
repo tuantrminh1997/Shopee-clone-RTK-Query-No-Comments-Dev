@@ -21,7 +21,6 @@ const appSlice = createSlice({
 		// 1. action quản lý chức năng thay đổi trạng thái đăng nhập ứng dụng
 		setIsLoggedInAction: (state, action: PayloadAction<boolean>) => {
 			const isLoggedIn = action.payload;
-			console.log("isLoggedIn at Reducer: ", isLoggedIn);
 			state.isLoggedIn = isLoggedIn;
 		},
 		// 2. action quản lý chức năng lưu thông tin user đang đăng nhập

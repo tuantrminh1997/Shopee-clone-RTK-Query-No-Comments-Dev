@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet-async";
 import UserProfileLayoutSideNavbar from "./UserProfileLayoutSideNavbar";
 
 function UserProfileLayoutInner() {
-	console.log("UserProfileLayout re-render");
 	return (
 		<div className='flex w-[1200px] pt-5 pb-14 xl:flex-col xl:w-screen'>
 			<Helmet>

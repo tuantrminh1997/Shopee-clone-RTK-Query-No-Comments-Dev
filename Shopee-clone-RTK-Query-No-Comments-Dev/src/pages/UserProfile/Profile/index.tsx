@@ -153,7 +153,6 @@ export default function Profile() {
 			const truthyImageFileExtension = getTruthyImageFileExtension(fileExtension as string);
 			const truthyImageFileType = getTruthyImageFileType((fileFromLocal as File).type);
 			if ((fileFromLocal as File) && (!truthyImageFileSize || !truthyImageFileType)) {
-				console.log("Upload Avatar Errors: ", fileFromLocal);
 				currentFileSizeAsMB;
 				toast.error(
 					`Chọn ảnh thất bại, file bạn vừa chọn có dung lượng ${currentFileSizeAsMB}MB là ${

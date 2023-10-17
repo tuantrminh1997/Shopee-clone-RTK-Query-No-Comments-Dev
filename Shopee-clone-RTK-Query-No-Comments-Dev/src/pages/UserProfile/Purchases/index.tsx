@@ -38,7 +38,6 @@ export default function Purchases() {
 			skip: !isLoggedIn,
 		},
 	);
-	console.log("purchaseListQueryData: ", purchaseListQueryData);
 
 	// biến đại diện cho toàn bộ Purchase List (get from server)
 	const purchaseList = useMemo(() => {

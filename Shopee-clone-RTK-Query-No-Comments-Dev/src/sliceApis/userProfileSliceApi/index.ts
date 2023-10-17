@@ -19,14 +19,6 @@ const userProfileSliceApi = createApi({
 			queryFn: async () => {
 				try {
 					const response = await getUserProfileApi();
-					console.log("user profile response at slice api: ", response);
-					const successMessage = response.data.message;
-					if (successMessage) {
-						toast.success(successMessage, {
-							position: "top-center",
-							autoClose: 2000,
-						});
-					}
 					return { data: response.data };
 				} catch (error: any) {
 					return { error };

@@ -50,11 +50,10 @@ export default function Register() {
 	const onsubmit = handleSubmit(async (requestData) => {
 		const registerData = omit(requestData, ["confirm_password"]);
 		try {
-			const response = await registerMutation(registerData);
-			console.log("register account success response: ", response);
+			const response = await registerMutation(registerData).unwrap();
 			dispatch(setIsLoggedInAction(true));
-			dispatch(setUserProfileAction((response as { data: AuthenticationSuccessResponse }).data.data.user));
-			const successMessage = (response as { data: AuthenticationSuccessResponse }).data.message;
+			dispatch(setUserProfileAction((response as AuthenticationSuccessResponse).data.user));
+			const successMessage = (response as AuthenticationSuccessResponse).message;
 			if (successMessage) {
 				toast.success(successMessage, {
 					position: "top-center",
