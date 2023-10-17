@@ -115,14 +115,14 @@ export default function Profile() {
 					// FormData - API của javascript
 					const formData = new FormData();
 					formData.append("image", userAvatar);
-					const updateUserProfileResponse = await updateUserAvatarMutation(formData as FormData);
-					const userAvatarResponse = (updateUserProfileResponse as AxiosResponse<SuccessResponseApi<string>, any>).data.data as string;
+					const updateUserProfileResponse = await updateUserAvatarMutation(formData as FormData).unwrap();
+					const userAvatarResponse = (updateUserProfileResponse as SuccessResponseApi<string>).data;
 					// gán cho biến userAvatarTryBlockScope để có thể sử dụng giá trị mới sau khi gán trong block scope của khối try {}
 					userAvatarTryBlockScope = userAvatarResponse;
 					// sau khi upload và submit thành công user avatar -> lưu vào field.value
 					setValue("avatar", userAvatarTryBlockScope);
-				} catch (error) {
-					console.log("update user avatar error: ", error);
+				} catch (error: any) {
+					throw new Error(error);
 				}
 			}
 			const updateUserProfileResponse = await updateUserProfileMutation({
@@ -131,13 +131,13 @@ export default function Profile() {
 				date_of_birth: formDataSuccessSchemaRules?.date_of_birth?.toISOString(),
 				// ghi đè lại giá trị user avatar name lấy về từ server:
 				avatar: userAvatarTryBlockScope,
-			});
+			}).unwrap();
 			userProfileQueryRefetch();
-			const userProfile = (updateUserProfileResponse as { data: SuccessResponseApi<User> }).data.data;
+			const userProfile = (updateUserProfileResponse as SuccessResponseApi<User>).data;
 			dispatch(setUserProfileAction(userProfile));
 			saveUserProfileToLocalStorage(userProfile);
-		} catch (errors) {
-			console.log("submit user profile errors: ", errors);
+		} catch (error: any) {
+			throw new Error(error);
 		}
 	});
 

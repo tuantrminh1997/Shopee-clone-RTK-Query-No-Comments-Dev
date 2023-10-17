@@ -48,7 +48,6 @@ const userProfileSliceApi = createApi({
 			queryFn: async (updateUserAvatarBody: FormData) => {
 				try {
 					const response = await updateUserAvatarApi(updateUserAvatarBody);
-					console.log("update user avatar response at mutation: ", response.data.data);
 					const successMessage = response.data.message;
 					if (successMessage) {
 						toast.success(successMessage, {
