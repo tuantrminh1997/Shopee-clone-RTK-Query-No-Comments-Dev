@@ -1,0 +1,2 @@
+const clearAccessTokenUserProfileEventMessage = "FinishedClearAccessTokenUserProfileFromLocalStorage";
+export default clearAccessTokenUserProfileEventMessage;
