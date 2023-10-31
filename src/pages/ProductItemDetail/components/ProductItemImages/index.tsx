@@ -1,5 +1,5 @@
 // react hooks:
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 // classNames:
 import classNames from "classnames";
 // icons
@@ -27,15 +27,19 @@ export default function ProductItemImages({
 	const { totalImageShownPositions } = productItemDetailInformationAttributes;
 	// Tổng vị trí các ảnh trong sliders
 	const imagesSliderPositions =
-		productItemDetailDatasImages.length > totalImageShownPositions
-			? totalImageShownPositions
-			: productItemDetailDatasImages.length;
+		productItemDetailDatasImages.length > totalImageShownPositions ? totalImageShownPositions : productItemDetailDatasImages.length;
 
 	// Mục đích để lấy được thuộc tính width
 	const imageRef = useRef<HTMLImageElement>(null);
 
 	// State quản lý src ảnh đang được hiển thị trên khung lớn nhất
 	const [image, setImage] = useState<string>(productItemDetailDatasImage);
+
+	useEffect(() => {
+		if (productItemDetailDatasImage) {
+			setImage(productItemDetailDatasImage);
+		}
+	}, [productItemDetailDatasImage]);
 
 	// state quản lý array các ảnh được đưa vào slider:
 	const [firstIndex, setFirstIndex] = useState<number>(0);
